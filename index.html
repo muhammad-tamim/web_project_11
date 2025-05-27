@@ -30,19 +30,47 @@
     <style>
         [data-theme="light"] {
             --color-primary: #E76F51;
-            --color-primary-content: #0A0826;
-            --color-secondary-content: #18191F;
-            --color-accent-content: #6C6C6C;
-            --color-base-content: #7E848C;
-            --color-neutral-content: #D9DBE1;
-            --color-info-content: #23A6F0;
+            --color-primary-content: #6C6C6C;
         }
     </style>
 </head>
 
-<body class="font-poppins px-5 md:px-10 lg:px-20 xl:px-[156px] mx-auto">
+<body class="font-poppins px-5 md:px-10 lg:px-20 xl:px-[156px] max-w-screen-2xl mx-auto">
     <header>
-        <nav></nav>
+        <nav>
+            <div class="navbar">
+                <div class="flex-1">
+                    <a class="cursor-pointer text-3xl lg:text-[35px] font-bold">BikerZone</a>
+                </div>
+                <div class="flex items-center gap-[50px]">
+                    <div class="hidden lg:flex">
+                        <ul class="flex gap-9">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="hidden lg:flex">
+                        <button class="btn btn-primary text-white font-bold text-xl w-[160px] h-[64px]">Login</button>
+                    </div>
+                    <div class="dropdown dropdown-end lg:hidden">
+                        <div tabindex="0" role="button">
+                            <div class="">
+                                <i class="text-2xl fa-solid fa-bars"></i>
+                            </div>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
         <!-- section -->
         <section></section>
